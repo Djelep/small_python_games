@@ -79,20 +79,20 @@ def play(game, x_player, o_player, print_game=True):
         print('It\'s a tie!')
 
 
-if __name__ == '__main__':
-    x_win = 0
-    o_win = 0
-    ties = 0
-    for i in range(1000):
-        x_player = RandomComputerPlayer('X')
-        o_player = GeniusComputerPlayer('O')
-        t = TickTackToe()
-        win = play(t, x_player, o_player, print_game=True)
-        if win == "X":
-            x_win += 1
-        elif win == "O":
-            o_win += 1
-        else:
-            ties += 1
-
-    print(f"X wins {x_win} times, O wins {o_win} times and {ties} ties")
+# if __name__ == '__main__':
+#     x_win = 0
+#     o_win = 0
+#     ties = 0
+#     for i in range(1000):
+#         x_player = RandomComputerPlayer('X')
+#         o_player = GeniusComputerPlayer('O')
+#         t = TickTackToe()
+#         win = play(t, x_player, o_player, print_game=True)
+#         if win == "X":
+#             x_win += 1
+#         elif win == "O":
+#             o_win += 1
+#         else:
+#             ties += 1
+#
+#     print(f"X wins {x_win} times, O wins {o_win} times and {ties} ties")
